@@ -16,6 +16,7 @@ mongo = PyMongo(app)
 
 #create home route
 @app.route("/")
+#use python functions:
 def index():
     #identify the name of the db collection mars
     mars = mongo.db.mars.find_one()
